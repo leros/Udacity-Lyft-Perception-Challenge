@@ -1,4 +1,4 @@
-#[Lyft Perception Challenge](https://www.udacity.com/lyft-challenge)
+## [Lyft Perception Challenge](https://www.udacity.com/lyft-challenge)
 June 2018
 
 ### Task
@@ -7,8 +7,8 @@ June 2018
 
 ### Analysis
 - It's a semantic segmentation problem. [Here](https://github.com/tangzhenyu/SemanticSegmentation_DL) is a good summary of the cutting-edge research, papers, and codes on this topic.
-- For this task, only three types of objects should be identified: vehicle, road, and all others, so it's a pixel-wise ternary classification problem.
-- It's an extension of the Semantic Segmentation project.
+- For this task, only three types of objects need to be identified: vehicle, road, and all others, so it's a pixel-wise ternary classification problem.
+- It's an extension of the [Semantic Segmentation](https://github.com/leros/Self-Driving-Car-Semantic-Segmentation) project.
 - Inferencing speed is as important as the training accuracy/recall.
 
 ### Solution
@@ -32,6 +32,6 @@ June 2018
   - fine tune Hyperparameters
   - collect more and better data
   - validate and test model thoroughly 
-- Inferring
-  - freeze model properly (was not working as inferring with frozen model actually decrease FPS a lot)
-  - optimize video/image processing
+- Inferring:
+  - freeze model properly (was not working as inferring with frozen model actually decrease frames per seconds (FPS) a lot)
+  - optimize video/image processing, e.g. parallel processing
